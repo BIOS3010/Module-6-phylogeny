@@ -20,16 +20,6 @@ The nexus format allows more information to be stored in the same file (trees, a
 
 
 
-**Warm-up exercise**
-
-
-
-```diff
-! Draw manually (e.g. with pen an paper) a phylogenetic tree corresponding to the tree described as follows in the Newick format:
-! ((((A,B),C),(D,E)),F).
-```
-
-
 
 ## The pipeline
 Fist we will constructing some trees using a few of the main construction approaches. We will use the pipeline offered under the “phylogenetic analysis” tab at http://www.phylogeny.fr/  This website has a convenient pipeline for the main parts of a phylogenetic analysis: i)  creating multiple sequence alignments, ii) remove non-homologous characters (in the pipeline this is called “curation”) iii) phylogenetic tree inference and iv) simple tree visualization. All you need to provide as an input is sequences in fasta-format, and then choose what kind of analysis you want to perform.
@@ -56,10 +46,18 @@ The pipeline offers several ways to construct phylogenetic trees: 1) Maximum Lik
 
 
 
+**Warm-up exercise**
+
+```diff
+! Draw manually (e.g. with pen an paper) a phylogenetic tree corresponding to the tree described as follows in the Newick format:
+! ((((A,B),C),(D,E)),F).
+```
+
 ### Exercise 1
 For the first exercise we will use the sequences of hemoglobin in Ex_1_hemoglobin.fasta (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin).  :
 
-(Hbb = hemoglobin beta chain;
+The abbreviations used in the file are:
+Hbb = hemoglobin beta chain;
 Hba = hemoglobin alpha chain;
 Glb5_Petma  = globin V from Petromyzon marinus = nineeye;
 Lgb2_Luplu = leghemoglobin II from Lupinus luteus = lupines;
