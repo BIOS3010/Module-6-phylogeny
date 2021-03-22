@@ -19,7 +19,7 @@ Trees in Newick format can in addition to sequence/taxon names have branch lengt
 The nexus format allows more information to be stored in the same file (trees, alignment, taxa tables with, simple formatting, colors etc.). But we will stick to Newick in this lab.  
 
 
-## The pipeline
+### The pipeline
 Fist we will constructing some trees using a few of the main construction approaches. We will use the pipeline offered under the "phylogenetic analysis" tab at http://www.phylogeny.fr/  This website has a convenient pipeline for the main parts of a phylogenetic analysis: i)  creating multiple sequence alignments, ii) remove non-homologous characters (in the pipeline this is called "curation") iii) phylogenetic tree inference and iv) simple tree visualization. All you need to provide as an input is sequences in fasta-format, and then choose what kind of analysis you want to perform.
 
 
