@@ -4,7 +4,7 @@
 
 The purpose of these exercises is to show you ways to construct phylogenetic trees based on **multiple sequence alignments (MSA)**. To construct the phylogenetic trees we will use http://www.phylogeny.fr/ , a simple online solution suitable for relatively small phylogenetic analyses. For more complex situations with several hundred taxa and/or genes it is common to use a computer cluster for the calculations since they can be computationally very demanding. A computing cluster will be used later in the course, but for this exercise the web resource will be sufficient.
 
-For visualization we will use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Online visualization tools also exists  but FigTree gives you some more flexibility.
+For visualization we will use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Online visualization tools also exists but FigTree gives you some more flexibility.
 
 
 First you will construct trees with _distance-based methods_, and then using _character based methods_ with an underlying evolutionary model. Finally, you’ll see how things can go wrong if paralogous sequences unwittingly are included in the MSA.
@@ -53,7 +53,7 @@ The pipeline offers several ways to construct phylogenetic trees: 1) Maximum Lik
 
 # Individual exercises:
 ## Exercise 1
-For the first exercise we will use the sequences of hemoglobin in Ex_1_hemoglobin.fasta (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin).  :
+For the first exercise we will use the sequences of hemoglobin in [Ex_1_hemoglobin.fasta](Ex_1_hemoglobin.fasta) (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin).  :
 
 The abbreviations used in the file are
 _Hbb_ = hemoglobin beta chain;  
