@@ -2,10 +2,9 @@
 
 **UNDER CONSTRUCTION**
 
-The purpose of these exercises is to show you ways to construct phylogenetic trees based on **multiple sequence alignments (MSA)**. To construct the phylogenetic trees we will use http://www.phylogeny.fr/ , a simple online solution suitable for relatively small phylogenetic analyses. For more complex situations with several hundred taxa and/or genes it is common to use a computer cluster for the calculations since they can be computationally very demanding. A computing cluster will be used later in the course, but for this exercise the web resource will be sufficient.
+The purpose of these exercises is to show you ways to construct phylogenetic trees based on **multiple sequence alignments (MSA)**. To construct the phylogenetic trees we will use http://www.phylogeny.fr/ , a simple online solution suitable for relatively small phylogenetic analyses. For more complex situations with several hundred taxa and/or genes it is common to use a computer cluster for the calculations since they can be computationally very demanding.
 
 For visualization we will use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Online visualization tools also exists but FigTree gives you some more flexibility.
-
 
 First you will construct trees with _distance-based methods_, and then using _character based methods_ with an underlying evolutionary model. Finally, you’ll see how things can go wrong if paralogous sequences unwittingly are included in the MSA.
 
@@ -14,48 +13,12 @@ Trees are usually stored in simple text formats that describe the _branching pat
 For instance, the following tree is described in the Newick format as : (((I,II),(III,IV)),V).
 
 
-Trees in Newick format can in addition to sequence/taxon names have branch length specifying the distance between nodes, and support values for the branches. More on support values later.
+Trees in Newick format can in addition to sequence/taxon names have branch length specifying the distance between nodes, and support values for the branches.
 
 The nexus format allows more information to be stored in the same file (trees, alignment, taxa tables with, simple formatting, colors etc.). But we will stick to Newick in this lab.  
 
 
 ### The pipeline
-Fist we will constructing some trees using a few of the main construction approaches. We will use the pipeline offered under the "phylogenetic analysis" tab at http://www.phylogeny.fr/  This website has a convenient pipeline for the main parts of a phylogenetic analysis: i)  creating multiple sequence alignments, ii) remove non-homologous characters (in the pipeline this is called "curation") iii) phylogenetic tree inference and iv) simple tree visualization. All you need to provide as an input is sequences in fasta-format, and then choose what kind of analysis you want to perform.
-
-
-Figure 2. Typical phylogenetic pipeline.
-
-
-**Alignments:**
-Constructing phylogenetic trees based on molecular data presupposes a good multiple sequence alignment (MSA) of the sequences (DNA or RNA). You should already be familiar with the concept of sequence alignments. There are several different algorithms to choose from with different strengths and weaknesses. Some are very fast, but less accurate. Some are good if the difference between sequences (or the evolutionary distance) to be aligned are large. Included in the http://www.phylogeny.fr/ are four commonly used algorithms. For this exercise we will use MUSCLE which performs well with amino acids sequences. If you have time you can explore other alignment algorithms, and see if the resulting MSA differs.
-
-**Curation:**
-Often regions of a multiple sequence alignment can be ambiguously aligned, or sometimes they are plainly wrong. One of the assumptions for making a phylogenetic tree is that the aligned characters in the alignment share the same evolutionary history. If wrongly aligned characters are used for tree inference there is a chance that the resulting tree is wrong as well. Luckily there are ways of computationally identify uncertain regions of an MSA and automatically remove them. The phylogeny.fr pipeline offers one of these programs called Gblocks. For the protein alignments in this exercise we will be using a less stringent setting than the (see figure, you want to tick of all three boxes under the "less stringent selection" header.
-
-**Tree inference:**
-The pipeline offers several ways to construct phylogenetic trees: 1) Maximum Likelihood (ML), 2) Parsimoy, 3) Distance based Neighbor joining and 4) Bayesian inference with MrBayes. Of these ML (with bootstrap) and Bayesian inference are more computational demanding than the other two, and usually take longer time to compute. Parsimony and Distance based methods for tree construction are seldom used in modern phylogenetic analyses, although they sometimes produce trees that are quite similar to those constructed with ML and Bayesian inference. In this exercise we will do both Neighbor joining and ML for comparison.
-
-
-
-###
-
-**Warm-up exercise**
-
-```diff
-! Draw manually (e.g. with pen an paper) a phylogenetic tree corresponding to the tree described as follows in the Newick format:
-! ((((A,B),C),(D,E)),F).
-```
-
-
-## Exercise 6.1
-For the first exercise we will use the sequences of hemoglobin in [Ex_1_hemoglobin.fasta](Ex_1_hemoglobin.fasta) (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin).  :
-
-The abbreviations used in the file are
-_Hbb_ = hemoglobin beta chain;  
-_Hba_ = hemoglobin alpha chain;  
-_Glb5_Petma_  = globin V from Petromyzon marinus = nineeye;  
-_Lgb2_Luplu_ = leghemoglobin II from Lupinus luteus = lupines  
-_Myg_Phyca_ = myoglobin from Physeter catodon = sperm whale  
 
 There are three different choices under the "phylogenetic analysis" tab on http://www.phylogeny.fr/:
 - **One Click**: Here you can paste your set of sequences and let the software make decisions on your behalf (Each step is optimized for your data).
@@ -63,6 +26,35 @@ There are three different choices under the "phylogenetic analysis" tab on http:
 - **A la Carte**: Create your own workflow.
 
 We will use the **"A la Carte" option for these exercises, that way we will have full control of all the steps in the pipeline.
+The steps are i)  creating multiple sequence alignments, ii) remove non-homologous characters (in the pipeline this is called "curation") iii) phylogenetic tree inference and iv) simple tree visualization.
+
+
+Typical phylogenetic pipeline.
+
+
+**Alignments:**
+Constructing phylogenetic trees based on molecular data presupposes a good multiple sequence alignment (MSA) of the sequences (DNA or RNA).  There are several different algorithms to choose from with different strengths and weaknesses. Some are very fast, but less accurate. Some are good if the difference between sequences (or the evolutionary distance) to be aligned are large. Included in the http://www.phylogeny.fr/ are four commonly used algorithms.
+
+**Curation:**
+Often regions of a multiple sequence alignment can be ambiguously aligned, or sometimes they are plainly wrong. One of the assumptions for making a phylogenetic tree is that the aligned characters in the alignment share the same evolutionary history. If wrongly aligned characters are used for tree inference there is a chance that the resulting tree is wrong as well. Luckily there are ways of computationally identify uncertain regions of an MSA and automatically remove them. The phylogeny.fr pipeline offers one of these programs called Gblocks.
+
+**Tree inference**
+The pipeline offers several ways to construct phylogenetic trees: 1) Maximum Likelihood (ML), 2) Parsimony, 3) Distance based Neighbor joining and 4) Bayesian inference with MrBayes. Of these ML (with bootstrap) and Bayesian inference are more computational demanding than the other two, and usually take longer time to compute. Parsimony and Distance based methods for tree construction are seldom used in modern phylogenetic analyses, although they sometimes produce trees that are quite similar to those constructed with ML and Bayesian inference.
+
+
+###
+## Exercise 6.1 Group exercises
+Each group will have a different setup for the pipeline, see the padlet.
+
+**Warm-up exercise**
+```diff
+! Draw manually (for instance with pen and paper) a phylogenetic tree
+! corresponding to the tree described in the Newick format
+```
+
+
+For the first tree in the pipeline we will use the sequences of hemoglobin in [Ex_1_hemoglobin.fasta](Ex_1_hemoglobin.fasta) (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin).  :
+The abbreviations used in the file are_Hbb_ = hemoglobin beta chain; _Hba_ = hemoglobin alpha chain; _Glb5_Petma_  = globin V from Petromyzon marinus (nineeye); _Lgb2_Luplu_ = leghemoglobin II from Lupinus luteus (lupines) ;_Myg_Phyca_ = myoglobin from Physeter catodon (sperm whale)  
 
 First, we will make an Neighbor Joining tree.
 You can set up the pipeline after choosing the "A la Carte" option (see figure):
@@ -75,20 +67,23 @@ You can set up the pipeline after choosing the "A la Carte" option (see figure):
  - Finally click **create workflow**.
 
 
-This will take you to a new page where you can paste the hemoglobin sequences (or use the file Ex1_globin.fasta). Hit **submit** and the sequence alignment will be constructed. The graphical output shows you how conserved the characters in the alignment are compare to the BLOSUM62 score: Max: 3.0 Mid: 1.5 Low: 0.5. Higher scoring regions are more conserved. You are given the option to save the **MSA** in several formats if you want to. This is not strictly necessary for this exercise since the alignment was done quite quickly. But if it had taken a long time (for larger alignments this step can take hours!) you probably would have wanted to save the result for safekeeping.
+After setting up the pipleline you will be taken to the next page where you can paste or upload the hemoglobin sequences (Ex1_globin.fasta). Hit **submit** and the sequence alignment will be constructed. The graphical output shows you how conserved the characters in the alignment are compare to the BLOSUM62 score: Max: 3.0 Mid: 1.5 Low: 0.5. Higher scoring regions are more conserved. You are given the option to save the **MSA** in several formats if you want to. This is not strictly necessary for this exercise since the alignment was done quite quickly. But if it had taken a long time (for larger alignments this step can take hours!) you probably would have wanted to save the result for safekeeping.
 
 Click "next step".
-Then: Make sure all three boxes under the "less stringent selection" is marked. Hit "submit". Now you will have a graphical representation of the curation process. Colored residues are considered conserved (corresponding to the high BLOSUM62 score). The blue line underneath the alignment shows which regions  have passed the curation process. If you remembered to mark all three "less stringent" options it should also say how many positions that was kept after curation.
+Then: Mark the boxes corresponding to the settings for your group in the padlet. Hit "submit". Now you will have a graphical representation of the curation process. Colored residues are considered conserved (corresponding to the high BLOSUM62 score). The blue line underneath the alignment shows which regions  have passed the curation process.
 
-(i.e. click "next step")
+click "next step"
 
 In the phylogeny settings sett bootstraps to 100, the substitution model to "Jones-Taylor-Thornton matrix" (often abbreviated JTT). Click "submit", wait for a few seconds and the first tree is ready! Save it to your computer in the newick format. You can now inspect it using use the (limited) tree viewing option in the pipeline OR for more flexibility use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). This program offers ways to rearrange the tree, change fonts, color branches etc. It also allows you to export the trees in commonly used graphic formats (jpg, png, pdf, bmp).
 
+### Using Figtree:
 Download, install and run FigTree. Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Lables" and set the labels to be displayed to "label" to see the bootstrap values.
 
-Now lets fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure 3).
+Now lets fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure).
 
-Figure 3: unrooted NJ tree, with bootstrap
+
+![Figtree example](data/Figtree_example.png)
+Figure of unrooted NJ tree, with bootstrap
 
 How do you interpret the bootstrap values and how are these computed? What does the tree tell you about the evolution of globin and in particular the evolution of the two chains of hemoglobin?
 
