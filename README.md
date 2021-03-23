@@ -43,7 +43,7 @@ The nexus format allows more information to be stored in the same file (trees, a
 ###
 ## Exercise 6.1 Group exercises
 For the first exercise each group will
-- Draw  a phylogenetic tree manually (for instance with pen and paper) corresponding to a tree described in the Newick format
+- Draw  a phylogenetic tree manually (for instance with pen and paper) corresponding to a tree described in the Newick format in the padlet https://uio.padlet.org/anderkkr/gnad1pe87v2w7ocs
 - Make a tree based on the sequences of hemoglobin in [Ex1_hemoglobin.fasta](Ex1_hemoglobin.fasta) (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin). The abbreviations used in the file are_Hbb_ = hemoglobin beta chain; _Hba_ = hemoglobin alpha chain; _Glb5_Petma_  = globin V from Petromyzon marinus (nineeye); _Lgb2_Luplu_ = leghemoglobin II from Lupinus luteus (lupines) ;_Myg_Phyca_ = myoglobin from Physeter catodon (sperm whale)  
 
 
