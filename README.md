@@ -16,7 +16,7 @@ We will use the **A la Carte** option for these exercises, that way we will have
 The steps are i) _creating multiple sequence alignments_, ii) _remove non-homologous characters_ (in the pipeline this is called "curation") iii) _phylogenetic tree inference_ and iv) _simple tree visualization_.
 
 
-Typical phylogenetic pipeline:
+Typical phylogenetic pipeline:  
 ![](data/Pipeline.png)
 
 **Alignments:**
@@ -38,8 +38,6 @@ For instance, the following tree is described in the Newick format as : (((I,II)
 Trees in Newick format can in addition to sequence/taxon names have branch length specifying the distance between nodes, and support values for the branches.
 
 The nexus format allows more information to be stored in the same file (trees, alignment, taxa tables with, simple formatting, colors etc.). But we will stick to Newick in this lab.  
-
-
 
 
 ###
@@ -100,7 +98,7 @@ Use the protein sequences in the file [Ex2_alphacrystalline.fasta](Ex2_alphacrys
 Calculate a tree with _Muscle_, _"less stringent"_ curation, and _ML_, choose "Approximate Likelihood-Ratio Test (aLRT)" as support values.
 
 ```diff
-Look at the tree in FigTree. Any surprises?
+! Look at the tree in FigTree. Any surprises?
 ```
 ## Exercise 6.3
 **A tree with an "error"?**
