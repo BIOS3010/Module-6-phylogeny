@@ -47,7 +47,7 @@ The pipeline offers several ways to construct phylogenetic trees: 1) Maximum Lik
 ```
 
 
-## Exercise 1
+## Exercise 6.1
 For the first exercise we will use the sequences of hemoglobin in [Ex_1_hemoglobin.fasta](Ex_1_hemoglobin.fasta) (you can read about hemoglobin here https://en.wikipedia.org/wiki/Hemoglobin).  :
 
 The abbreviations used in the file are
@@ -101,7 +101,7 @@ If you want to proceed before this tree is finished, just open a new tab in your
 
 
 # Individual exercises:
-## Exercise 2. Studying Evolution using Protein Sequences  
+## Exercise 6.2. Studying Evolution using Protein Sequences  
 
 The vertebrate eye lens is an organ that is already present in the embryo in early stages of development. One remarkable feature of the lens is that is consists of cell layers, like the layers of an onion. Growth takes place at the outside; the inner part of the lens is therefore just as old as its carrier is! This also means that old cells will not be replaced by new ones contrary to what happens in other parts of the body. This imposes high demands in terms of stability to the constituting parts of these cells. Moreover, it has to be transparent for light - something that comes in quite handy for a lens...
  The alpha-crystallin protein is one of the most important constituents of the eye lens. This protein fulfills a key role in maintaining stability and structure of the lens. Its precise working is not completely known, but we know that the protein is a member of the widely occurring small heat shock protein (HSP20) family. The 3-dimensional structure of a distant relative of the protein has be elucidated some time ago. Since alpha-crystallin plays such an important role, it evolves at a very slow rate.
@@ -112,13 +112,13 @@ Use these protein sequences in the file Ex2_alphacrystalline.fasta_:
 
 Calculate the tree with _Muscle_, _"less stringent"_ curation setting and _ML_, this time choose "Approximate Likelihood-Ratio Test (aLRT)" instead of bootstrap since it is much faster. Look at the tree in FigTree. Any surprises?
 
-## Exercise 3
+## Exercise 6.3
 **A tree with an "error"?**
 Calculate a tree using Muscle and ML with Approximate Likelihood-Ratio Test (aLRT) with sequences (Ex3_alphacrystaline_v2.fasta).  :
 
 Place the root on the most logical branch. What is strange about this tree? Can you explain this?
 
-## Exercise 4
+## Exercise 6.4
 The complete picture
 Finally we use all the alpha crystallins (Ex4_alphacrystaline_v3.fasta)
 
