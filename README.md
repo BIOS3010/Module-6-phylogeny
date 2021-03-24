@@ -2,7 +2,7 @@
 
 The purpose of these exercises is to show you ways to construct phylogenetic trees based on **multiple sequence alignments (MSA)**. To construct the phylogenetic trees we will use http://www.phylogeny.fr/ , a simple online solution suitable for relatively small phylogenetic analyses. For more complex situations with several hundred taxa and/or genes it is common to use a computer cluster for the calculations since they can be computationally very demanding.
 
-For visualization we will use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Online visualization tools also exists but FigTree gives you some more flexibility.
+For visualisationz we will use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Online visualization tools also exists but FigTree gives you some more flexibility.
 
 
 ### The pipeline
@@ -67,9 +67,9 @@ In the Phylogeny menu you might need to change some settings depending on the se
 Click "submit", wait a little bit and the first tree is ready! Save it to your computer in the Newick format. You can now inspect it using use the (limited) tree viewing option in the pipeline OR for more flexibility use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). This program offers ways to rearrange the tree, change fonts, color branches etc. It also allows you to export the trees in commonly used graphic formats (jpg, png, pdf, bmp).
 
 **Using Figtree**:
-Download, install and run FigTree. Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Lables" and set the labels to be displayed to "label" to see the bootstrap values.
+Download, install and run FigTree. Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Labels" and set the labels to be displayed to "label" to see the bootstrap values.
 
-Now lets fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure).
+Now let's fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure).
 
 
 ![Figtree example](data/Figtree_example.png)  
@@ -90,7 +90,7 @@ Each groups should provide the manually drawn tree, and a screenshot (or "proper
 ## Exercise 6.2. Studying Evolution using Protein Sequences  
 
 The vertebrate eye lens is an organ that is already present in the embryo in early stages of development. One remarkable feature of the lens is that is consists of cell layers, like the layers of an onion. Growth takes place at the outside; the inner part of the lens is therefore just as old as its carrier is! This also means that old cells will not be replaced by new ones contrary to what happens in other parts of the body. This imposes high demands in terms of stability to the constituting parts of these cells. Moreover, it has to be transparent for light - something that comes in quite handy for a lens.
- The alpha-crystallin protein is one of the most important constituents of the eye lens. This protein fulfills a key role in maintaining stability and structure of the lens. Its precise working is not completely known, but we know that the protein is a member of the widely occurring small heat shock protein (HSP20) family. The 3-dimensional structure of a distant relative of the protein has be elucidated some time ago. Since alpha-crystallin plays such an important role, it evolves at a very slow rate.
+ The alpha-crystallin protein is one of the most important constituents of the eye lens. This protein fulfils a key role in maintaining stability and structure of the lens. Its precise working is not completely known, but we know that the protein is a member of the widely occurring small heat shock protein (HSP20) family. The 3-dimensional structure of a distant relative of the protein has be elucidated some time ago. Since alpha-crystallin plays such an important role, it evolves at a very slow rate.
 
 **Calculation of the alpha-crystalline tree**:
 Use the protein sequences in the file [Ex2_alphacrystalline.fasta](Ex2_alphacrystalline.fasta) :
