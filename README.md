@@ -114,7 +114,7 @@ Calculate a tree using Muscle and ML with Approximate Likelihood-Ratio Test (aLR
 **The complete picture**
 Finally we use all the alpha crystallins [Ex4_alphacrystaline.fasta](Ex4_alphacrystaline.fasta)
 
-Calculate the tree using Muscle and ML with Approximate Likelihood-Ratio Test (aLRT) . :
+Calculate the tree using Muscle and ML with Approximate Likelihood-Ratio Test (aLRT). :
 
 ```diff
 ! Where do you place the root?
