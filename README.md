@@ -119,5 +119,5 @@ Calculate the tree using Muscle and ML with Approximate Likelihood-Ratio Test (a
 ```diff
 ! Where do you place the root?
 ! How would you describe this tree?
-! This should clarify the picture that we got in the previous exercise?
+! This should clarify the picture that we got in the previous exercise!
 ```
