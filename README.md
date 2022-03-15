@@ -65,16 +65,15 @@ For this exercise, each group will provide an answer to Canvas (under Diskusjone
 - Select the workflow specific for your group and click the green button with "Advanced options".
 - Paste or upload the hemoglobin sequences ([Ex1_hemoglobin.fasta](Ex1_hemoglobin.fasta)) under "Configure your workflow" and "Input data".
 - Expand the menu for your group's tree inference method by clicking the **"+"** sign and make sure that bootstrap branch support is specified. Set the number of boostraps to (at least) 100. 
-- Hit **submit**. The pipeline will run for a minute or so (depending on the the queue, the tree construction method, and the number of boostraps). When it is done, look for the green button marked "Viewer". 
+- Hit **submit**. The pipeline will run for a minute or so (depending on the the queue, the tree construction method, and the number of boostraps). When it is done look for the green button marked "Viewer", on the left side of the green button you have the option to save the tree as a newickfile (with the etxtension .nhx).
 
-The tree will be unrooted and looks something like this
 
-![Figtree example](data/Tree_Viewer.png)  
+**Using Figtree**:
+Download, install and run FigTree. Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Labels" and set the labels to be displayed to "label" to see the bootstrap values.
+Now let's fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure).
+
+![Figtree example](data/Figtree_example.png)  
 _Figure of unrooted tree, with support values_
-
-
-You will have to decide where to put the root. If you click one of the nodes on the tree a menu appears that allows you to do some simple manipulation of the tree. For instance you can choose where to place the root, by selecting "Reroot on this node". Also make sure that "Display support values" are selected under Tree settings. You can try to place the root at different places on the tree and see how it affects the final result. 
-
 
 ![Menu](data/Menu.png)
 
