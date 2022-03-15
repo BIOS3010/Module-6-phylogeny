@@ -2,7 +2,7 @@
 
 The purpose of these exercises is to show you ways to construct phylogenetic trees based on multiple sequence alignments (MSA). To construct the phylogenetic trees, we will use the pipeline provided on https://ngphylogeny.fr/analysis. This online solution is suitable for relatively small phylogenetic analyses. For more complex situations with several hundred taxa and/or genes it is common to use a computer cluster for the calculations since they can be computationally very demanding.
 
-For visualization of the inferred tree there are also several options. In this lab we will use the visualisation provided by the same pipeline. If you want more flexibility You can also use iTol (https://itol.embl.de/) which is a good online solution. Or, if you prefer to have a program local on your computer, I recommend FigTree (http://tree.bio.ed.ac.uk/software/figtree/). 
+For visualisation we will use FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Online visualization tools also exists but FigTree gives you some more flexibility.
 
 
 ### The pipeline
@@ -69,7 +69,7 @@ For this exercise, each group will provide an answer to Canvas (under Diskusjone
 
 
 **Using Figtree**:
-Download, install and run FigTree. Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Labels" and set the labels to be displayed to "label" to see the bootstrap values.
+Download, install and run FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Labels" and set the labels to be displayed to "label" to see the bootstrap values.
 Now let's fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure).
 
 ![Figtree example](data/Figtree_example.png)  
