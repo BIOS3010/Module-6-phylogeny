@@ -75,7 +75,6 @@ Now let's fix the root. For this particular tree we can choose to set the root b
 ![Figtree example](data/Figtree_example.png)  
 _Figure of unrooted tree, with support values_
 
-![Menu](data/Menu.png)
 
 PS: The abbreviations used in the ([Ex1_hemoglobin.fasta](Ex1_hemoglobin.fasta)) file are *Hbb* = hemoglobin beta chain; *Hba* = hemoglobin alpha chain; *Glb5_Petma* = globin V from Petromyzon marinus (sea lamprey); *Lgb2_Luplu* = leghemoglobin II from Lupinus luteus (lupines); *Myg_Phyca* = myoglobin from Physeter catodon (sperm whale). 
 
