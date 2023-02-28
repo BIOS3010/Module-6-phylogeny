@@ -12,7 +12,7 @@ There are three different ways of running the pipeline on  https://ngphylogeny.f
 - **Advanced**: Allows you to manually set parameters for the various steps.
 - **A la Carte**: Create your own workflow. Even more flexible than the Advanced option. 
 
-We will use the **Advanced** option for these exercises so that we can modify the steps in the pipeline. The steps are i) **Multiple Alignment**, ii) **Alignment Curation** (i.e. removal of non-homologous characters or badly aligned characters), iii) **Tree inference** and iv) **Tree visualization**.
+We will use the **A la Carte** option for these exercises so that we can modify the steps in the pipeline. The steps are i) **Multiple Alignment**, ii) **Alignment Curation** (i.e. removal of non-homologous characters or badly aligned characters), iii) **Tree inference** and iv) **Tree visualization**.
 
 
 ![](data/pipeline_v2.png)
@@ -61,8 +61,7 @@ For this exercise, each group will provide an answer to Canvas (under Diskusjone
 ````
 
 **Steps for running the pipeline** 
-- Choose the **Advanceded workflow** option. Use the setting for your group as specified on Canvas.
-- Select the workflow specific for your group and click the green button with "Advanced options".
+- Choose the **A la Carte** option. Use the setting for your group as specified on Canvas.
 - Paste or upload the hemoglobin sequences ([Ex1_hemoglobin.fasta](Ex1_hemoglobin.fasta)) under "Configure your workflow" and "Input data".
 - Expand the menu for your group's tree inference method by clicking the **"+"** sign and make sure that bootstrap branch support is specified. Set the number of boostraps to (at least) 100. 
 - Hit **submit**. The pipeline will run for a minute or so (depending on the the queue, the tree construction method, and the number of boostraps). When it is done look for the green button marked "Viewer", on the left side of the green button you have the option to save the tree as a newickfile (with the etxtension .nhx).
@@ -87,7 +86,7 @@ The vertebrate eye lens is an organ that is already present in the embryo in ear
 **Calculation of the alpha-crystalline tree**:
 Use the protein sequences in the file [Ex2_alphacrystalline.fasta](Ex2_alphacrystalline.fasta) :
 
-Setup the pipeline with the **Advanced workflow** option and calculate a tree with _MAFFT_, _BMGE_ curation, and _PhyML_. Choose _bootstrap_ under Statistical test for branch support in the advanced settings, and set it to 100.
+Setup the pipeline with the **A la Carte** option and calculate a tree with _MAFFT_, _BMGE_ curation, and _PhyML_. Choose _bootstrap_ under Statistical test for branch support in the advanced settings, and set it to 100.
 
 ```diff
 ! Look at the tree and decide where to place the root. 
