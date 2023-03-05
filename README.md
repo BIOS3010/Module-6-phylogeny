@@ -47,7 +47,7 @@ Trees in Newick format can in addition to sequence/taxon names have branch lengt
 
 
 ###
-## Exercise 6.1 Group exercises
+## Exercise 6.1 Warm-up exercises
 For this exercise, each group will provide an answer to Canvas (under Diskusjoner) to these points:
 - Draw  a phylogenetic tree manually (for instance with pen and paper) corresponding to a tree described in the Newick format for your group on Canvas.
 - Make a tree based on the sequences of [hemoglobin](https://en.wikipedia.org/wiki/Hemoglobin) in [Ex1_hemoglobin.fasta](Ex1_hemoglobin.fasta) and with the tree inference parameters specific to your group. See how to do this below. Each group should provide the manually drawn tree, and a screenshot (or a proper figure in jpeg or png) of the tree generated with the pipeline. In addition, the questions below should be answered and related to your treee.
