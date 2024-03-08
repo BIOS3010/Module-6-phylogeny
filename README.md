@@ -68,7 +68,7 @@ For this exercise, each group will provide an answer to Canvas (under Diskusjone
 
 
 **Using Figtree**:
-Download, install and run FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Labels" and set the labels to be displayed to "label" to see the bootstrap values.
+It is possible to view simple trees in the browser using the pipeline, however it is limited in function. A better alternative is to dowlonad the tree an view it in a dedicated program. We will use FigTree (other alternaive exists). Download, install and run FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Open the tree you just saved (click "file" and "open"). Click OK when you are asked for a name for the nodes/branches. Now you are looking at an unrooted tree without bootstrap values printed. First, we should add the bootstrap values. You will have to go to the menu option "Branch Labels" and set the labels to be displayed to "label" to see the bootstrap values.
 Now let's fix the root. For this particular tree we can choose to set the root between the hemoglobin sequences and the other version of globin. To achieve this, mark the branch leading to the tips called HBA_xxx and HBB_xxx. Then Click "Reroot" (see figure).
 
 ![Figtree example](data/Figtree_example.png)  
